@@ -1,0 +1,13 @@
+> GET /header.php HTTP/1.1
+> User-Agent: curl/7.21.6 (i686-pc-linux-gnu) libcurl/7.21.6 OpenSSL/1.0.0e zlib/1.2.3.4 libidn/1.22 librtmp/2.3
+> Host: localhost:8081
+> Accept: application/json, text/html;=0.5
+> 
+< HTTP/1.1 200 OK
+< Host: localhost:8081
+< Connection: close
+< X-Powered-By: PHP/5.4.3
+< Content-Type: application/json
+< 
+
+{"message":"hello you"}
