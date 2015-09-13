@@ -1,7 +1,8 @@
 <?php
 
-require('library.php');
+require('Events.php');
 
 $server = new SoapServer("wsdl"); // wsdl file name
-$server->setClass('Library');
+$server->setClass('Events');
 $server->handle();
+

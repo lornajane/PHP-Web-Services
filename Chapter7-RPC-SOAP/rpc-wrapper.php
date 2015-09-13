@@ -1,29 +1,30 @@
 <?php
 
-include("library.php");
-$lib = new Library();
+require "Events.php";
 
-if(isset($_GET['action'])) {
-    switch($_GET['action']) {
-    case "getDwarves":
-        $data = $lib->getDwarves();
-        break;
-    case "greetUser":
-        $data = $lib->greetUser(
-            filter_input(INPUT_GET, 'name', FILTER_SANITIZE_STRING)
-        );
-        break;
-    default:
-        // PHP 5.4+ only, use code below for earlier versions
-        http_response_code(400);
-
-        // PHP < 5.4 use the line below instead
-        // header("Status: 400", false, 400);
-
-        $data = array("error" => "bad request");
+// Look for a valid action
+if(isset($_GET['method'])) {
+    switch($_GET['method']) {
+        case "eventList":
+            $events = new Events();
+            $data = $events->getEvents();
+            break;
+        case "event":
+            $event_id = (int)$_GET['event_id'];
+            $events = new Events();
+            $data = $events->getEventById($event_id);
+            break;
+        default:
+            http_response_code(400);
+            $data = array("error" => "bad request");
+            break;
     }
-
-    header("Content-Type: application/json");
-    echo json_encode($data);
+} else {
+    http_response_code(400);
+    $data = array("error" => "bad request");
 }
+
+// let's send the data back
+header("Content-Type: application/json");
+echo json_encode($data);
 

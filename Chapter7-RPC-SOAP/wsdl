@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://localhost:8080/soap-server2.php" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap-enc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" name="Events" targetNamespace="http://localhost:8080/soap-server2.php">
+  <types>
+    <xsd:schema targetNamespace="http://localhost:8080/soap-server2.php">
+      <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+    </xsd:schema>
+  </types>
+  <portType name="EventsPort">
+    <operation name="getEvents">
+      <documentation>Get all the events we know about</documentation>
+      <input message="tns:getEventsIn"/>
+      <output message="tns:getEventsOut"/>
+    </operation>
+    <operation name="getEventById">
+      <documentation>Fetch the detail for a single event</documentation>
+      <input message="tns:getEventByIdIn"/>
+      <output message="tns:getEventByIdOut"/>
+    </operation>
+  </portType>
+  <binding name="EventsBinding" type="tns:EventsPort">
+    <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="getEvents">
+      <soap:operation soapAction="http://localhost:8080/soap-server2.php#getEvents"/>
+      <input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost:8080/soap-server2.php"/>
+      </input>
+      <output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost:8080/soap-server2.php"/>
+      </output>
+    </operation>
+    <operation name="getEventById">
+      <soap:operation soapAction="http://localhost:8080/soap-server2.php#getEventById"/>
+      <input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost:8080/soap-server2.php"/>
+      </input>
+      <output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost:8080/soap-server2.php"/>
+      </output>
+    </operation>
+  </binding>
+  <service name="EventsService">
+    <port name="EventsPort" binding="tns:EventsBinding">
+      <soap:address location="http://localhost:8080/soap-server2.php"/>
+    </port>
+  </service>
+  <message name="getEventsIn"/>
+  <message name="getEventsOut">
+    <part name="return" type="soap-enc:Array"/>
+  </message>
+  <message name="getEventByIdIn">
+    <part name="event_id" type="xsd:int"/>
+  </message>
+  <message name="getEventByIdOut">
+    <part name="return" type="soap-enc:Array"/>
+  </message>
+</definitions>
