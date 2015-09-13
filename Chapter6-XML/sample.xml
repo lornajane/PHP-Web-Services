@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<hotels>
+	<hotel name="Queens Hotel">
+		<rooms>17</rooms>
+		<price>150</price>
+	</hotel>
+	<hotel name="Kings Hotel">
+		<rooms>12</rooms>
+		<price>150</price>
+	</hotel>
+	<hotel name="Grand Hotel">
+		<rooms>27</rooms>
+		<price>100</price>
+	</hotel>
+</hotels>

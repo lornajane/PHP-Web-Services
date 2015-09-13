@@ -2,7 +2,7 @@
 
 require("api-key.php");
 $animal = "kitten";
-$data = file_get_contents('http://api.flickr.com/services/rest/?' 
+$data = file_get_contents('https://api.flickr.com/services/rest/?' 
     . http_build_query(array(
         "method" => "flickr.photos.search",
         "api_key" => $api_key,
