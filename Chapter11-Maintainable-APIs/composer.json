@@ -1,0 +1,6 @@
+{
+    "require": {
+        "slim/slim": "3.0.0-RC1",
+        "monolog/monolog": "^1.17"
+    }
+}
