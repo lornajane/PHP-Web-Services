@@ -1,7 +1,7 @@
 <?php
 
 $url = 'http://localhost/book/get-form-page.php';
-$data = array("category" => "technology", "rows" => 20);
+$data = ["category" => "technology", "rows" => 20];
 
 $get_addr = $url . '?' . http_build_query($data);
 $ch = curl_init($get_addr);
