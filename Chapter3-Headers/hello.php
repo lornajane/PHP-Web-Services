@@ -2,10 +2,11 @@
 
 require "accept.php";
 
-$data = array ("greeting" => "hello", "name" => "Lorna");
+$data = ["greeting" => "hello", "name" => "Lorna"];
 
 $accepted_formats = parseAcceptHeader();
-$supported_formats = array("application/json", "text/html");
+// print_r($accepted_formats);
+$supported_formats = ["application/json", "text/html"];
 foreach($accepted_formats as $format) {
     if(in_array($format, $supported_formats)) {
         // yay, use this format
@@ -20,7 +21,7 @@ switch($format) {
         break;
     case "text/html":
     default:
-        $output = "<p>" . implode(',', $data) . "</p>";
+        $output = "<p>" . implode(', ', $data) . "</p>";
         break;
 }
 
