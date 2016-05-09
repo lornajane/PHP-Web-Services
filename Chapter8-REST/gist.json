@@ -1,0 +1,82 @@
+{
+  "url": "https://api.github.com/gists/17018bf64b89dd179322",
+  "forks_url": "https://api.github.com/gists/17018bf64b89dd179322/forks",
+  "commits_url": "https://api.github.com/gists/17018bf64b89dd179322/commits",
+  "id": "17018bf64b89dd179322",
+  "git_pull_url": "https://gist.github.com/17018bf64b89dd179322.git",
+  "git_push_url": "https://gist.github.com/17018bf64b89dd179322.git",
+  "html_url": "https://gist.github.com/17018bf64b89dd179322",
+  "files": {
+    "text.txt": {
+      "filename": "text.txt",
+      "type": "text/plain",
+      "language": "Text",
+      "raw_url": "https://gist.githubusercontent.com/lornajane/17018bf64b89dd179322/raw/336516c8e23e55265245bf589ae56aafa9cbbcf2/text.txt",
+      "size": 18,
+      "truncated": false,
+      "content": "Some riveting text"
+    }
+  },
+  "public": true,
+  "created_at": "2015-07-23T18:30:57Z",
+  "updated_at": "2015-07-23T18:30:57Z",
+  "description": "Gist created by API",
+  "comments": 0,
+  "user": null,
+  "comments_url": "https://api.github.com/gists/17018bf64b89dd179322/comments",
+  "owner": {
+    "login": "lornajane",
+    "id": 172607,
+    "avatar_url": "https://avatars.githubusercontent.com/u/172607?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lornajane",
+    "html_url": "https://github.com/lornajane",
+    "followers_url": "https://api.github.com/users/lornajane/followers",
+    "following_url": "https://api.github.com/users/lornajane/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lornajane/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lornajane/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lornajane/subscriptions",
+    "organizations_url": "https://api.github.com/users/lornajane/orgs",
+    "repos_url": "https://api.github.com/users/lornajane/repos",
+    "events_url": "https://api.github.com/users/lornajane/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lornajane/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "forks": [
+
+  ],
+  "history": [
+    {
+      "user": {
+        "login": "lornajane",
+        "id": 172607,
+        "avatar_url": "https://avatars.githubusercontent.com/u/172607?v=3",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/lornajane",
+        "html_url": "https://github.com/lornajane",
+        "followers_url": "https://api.github.com/users/lornajane/followers",
+        "following_url": "https://api.github.com/users/lornajane/following{/other_user}",
+        "gists_url": "https://api.github.com/users/lornajane/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/lornajane/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/lornajane/subscriptions",
+        "organizations_url": "https://api.github.com/users/lornajane/orgs",
+        "repos_url": "https://api.github.com/users/lornajane/repos",
+        "events_url": "https://api.github.com/users/lornajane/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/lornajane/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "version": "0392fec1b0a32463ec005942fb088aae6c47a763",
+      "committed_at": "2015-07-23T18:30:57Z",
+      "change_status": {
+        "total": 1,
+        "additions": 1,
+        "deletions": 0
+      },
+      "url": "https://api.github.com/gists/17018bf64b89dd179322/0392fec1b0a32463ec005942fb088aae6c47a763"
+    }
+  ]
+}
+
+
